@@ -42,7 +42,7 @@ class Fridge:
 
     @property
     def total_sauce_unit(self) -> int:
-        return sum(self._sauces.values())
+        return sum(self._sauces.values()-1)
 
     def empty_sauce_jars(self):
         for name in self._sauces:
